@@ -1,10 +1,11 @@
 # Notifire
-Notifire is a minimal event subscription system for GameMaker Studio 2.3, based on the Observer pattern.
+Notifire is a minimal event notification system for GameMaker Studio 2.3 based on the observer pattern, that allows objects / instances to communicate efficiently through loosely coupled events.
 
 ## Features
-- Subscribe and unsubscribe instances to custom events
-- Broadcast events from anywhere to notify all subscribed instances and run callbacks in the instance scope
-- Easy to use and setup
+- Decouples objects through event-driven communication
+- Easy to use with a simple, minimal API
+- Callbacks run in the context of the subscribed instances
+- Define events however you prefer: strings, numbers, enums, ...
 
 ## Installation  
 1. Download the latest release or clone the repository
