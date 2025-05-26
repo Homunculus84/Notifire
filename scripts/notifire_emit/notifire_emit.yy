@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"notifire_emit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"notifire_emit",
+  "parent":{
+    "name":"notifire",
+    "path":"folders/Scripts/notifire.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

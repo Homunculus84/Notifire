@@ -1,0 +1,2 @@
+dragging = false;
+buttons = [];

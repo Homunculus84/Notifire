@@ -1,0 +1,1 @@
+notifire_emit(string("button.{0}", color), image_index);

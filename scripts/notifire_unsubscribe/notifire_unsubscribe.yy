@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"notifire_unsubscribe",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"notifire_unsubscribe",
+  "parent":{
+    "name":"notifire",
+    "path":"folders/Scripts/notifire.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
