@@ -1,2 +1,60 @@
 # Notifire
-Notification system for GameMaker Studio 2.3 
+Notifire is a minimal event subscription system for GameMaker Studio 2.3, based on the Observer pattern.
+
+## Features
+- Subscribe and unsubscribe instances to custom events
+- Broadcast events from anywhere to notify all subscribed instances and run callbacks in the instance scope
+- Easy to use and setup
+
+## Installation  
+1. Download the latest release or clone the repository
+2. Import the yymps package or scripts into your GameMaker Studio project.
+
+## Usage
+
+### Subscribing to events
+Instances can subscribe to any number of events. Events are just identifier strings or numbers (or enums), they do not require a specific format as long as you are consistent.
+
+Suscribing requires passing in a callback function that should run when the event is emitted. The function runs in the context of the instance, and gets two parameters when it is called: event (the event name) and data (any value passed by the emitter to the event).
+
+**Important:** Instances are required to unsuscribe to all their events whenever they are destroyed. The object cleanup event is perfect for this.
+
+```gml
+// Subscribe the current instance to a single event, and use the event data.
+notifire_subscribe("player.damaged", function(_event, _data) {
+  show_debug_message(string("Player health has been damaged by {0}", _data));
+});
+
+// Subscribe the current instance to multiple events with the same callback
+notifire_subscribe(["player.checkpoint", "stage.cleared"], function() {
+  show_debug_message(string("Saving the game"));
+});
+```
+
+### Unsubscribing from events
+Unsubscribing is required before an instance gets destroyed. You can easily unsubscribe from all events or just selected ones.
+
+```gml
+// Unsubscribe the current instance from a single event
+notifire_unsubscribe("player.damaged");
+
+// Unsibscribe the current instance from multiple events
+notifire_unsubscribe(["player.checkpoint", "stage.cleared"]);
+
+// Unsubscribe the current instance from all events it is subscribed to
+notifire_unsubscribe();
+```
+
+### Emitting (broadcasting) events
+Events can be broadcasted from anywhere. 
+
+```gml
+// Broadcast the player.damaged event and notify the amount of damage taken
+notifire_emit("player.damaged", _damage);
+
+// Broadcast a stage.cleared event, without passing any data
+notifire_emit("stage.cleared");
+
+// Broadcast an event with more structured data
+notifire_emit("player.died", {killed_by: _enemy, x: x, y: y});
+```
