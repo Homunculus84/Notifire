@@ -28,7 +28,7 @@ notifire_subscribe("player.damaged", function(_event, _data) {
 
 // Subscribe the current instance to multiple events with the same callback
 notifire_subscribe(["player.checkpoint", "stage.cleared"], function() {
-  show_debug_message(string("Saving the game"));
+  show_debug_message("Saving the game...");
 });
 ```
 
