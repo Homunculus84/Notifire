@@ -8,7 +8,7 @@ Notifire is a minimal event notification system for GameMaker Studio 2.3 based o
 - Define events however you prefer: strings, numbers, enums, ...
 
 ## Installation  
-1. Download the latest release or clone the repository
+1. Download the [latest release](https://github.com/Homunculus84/Notifire/releases) or clone the repository
 2. Import the yymps package or scripts into your GameMaker Studio project.
 
 ## Usage
