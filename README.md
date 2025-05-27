@@ -1,5 +1,5 @@
 # Notifire
-Notifire is a minimal event notification system for GameMaker Studio 2.3 based on the pubsub pattern, that allows objects / instances to communicate efficiently through loosely coupled events.
+Notifire is a minimal event notification system for GameMaker Studio 2.3 based on the PubSub pattern, that allows objects / instances to communicate efficiently through loosely coupled events.
 
 ## Features
 - Decouples objects through event-driven communication
