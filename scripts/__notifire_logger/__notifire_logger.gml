@@ -7,7 +7,7 @@ function __notifire_logger() {
 	_logger = {};
 	with(_logger) {
 	
-		error = function(_message){
+		error = function(_error){
 			show_error(string("Notifire {0}: {1}\n", NOTIFIRE_VERSION, _error), true);
 		}
 
