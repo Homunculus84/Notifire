@@ -9,7 +9,7 @@
 /// @returns    N/A
 
 function notifire_emit(_event, _data = undefined){
-	static _notifire = __notifire();
+	static _notifire = __Notifire();
 
 	if(is_array(_event)) {
 		for(var _i = 0; _i < array_length(_event); _i++) {

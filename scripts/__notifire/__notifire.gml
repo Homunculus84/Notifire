@@ -3,9 +3,9 @@
 #macro NOTIFIRE_VERSION		"1.0.0"
 #macro NOTIFIRE_DEBUG		false
 
-__notifire();
+__Notifire();
 
-function __notifire() {
+function __Notifire() {
 	static _notifire = undefined;
 	if(!is_undefined(_notifire)) { return _notifire;}
 	
@@ -16,7 +16,7 @@ function __notifire() {
 		__index_subscribers		= {};
 		__index_events			= {};
 		
-		__logger				= __notifire_logger();
+		__logger				= __NotifireLogger();
 	
 		#region private
 	

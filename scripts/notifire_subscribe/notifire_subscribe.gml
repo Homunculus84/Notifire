@@ -18,7 +18,7 @@
 /// @returns    N/A
 
 function notifire_subscribe(_event, _fn, _instance = self){
-	static _notifire = __notifire();
+	static _notifire = __Notifire();
 	
 	var _subscriber = _instance.id;
 	

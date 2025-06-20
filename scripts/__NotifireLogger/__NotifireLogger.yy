@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__notifire_logger",
+  "%Name":"__NotifireLogger",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__notifire_logger",
+  "name":"__NotifireLogger",
   "parent":{
-    "name":"notifire",
-    "path":"folders/Scripts/notifire.yy",
+    "name":"Notifire",
+    "path":"folders/Scripts/Notifire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

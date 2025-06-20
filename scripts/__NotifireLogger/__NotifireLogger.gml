@@ -1,6 +1,6 @@
 // Feather disable all
 
-function __notifire_logger() {
+function __NotifireLogger() {
 	static _logger = undefined;
 	if(!is_undefined(_logger)) { return _logger;}
 	
@@ -16,9 +16,9 @@ function __notifire_logger() {
 		}
 		
 		log = function() {
-			trace(" Subscriptions: " + json_stringify(__notifire().__subscriptions, true));
-			trace(" Events Index: " + json_stringify(__notifire().__index_events, true));
-			trace(" Subscribers Index: " + json_stringify(__notifire().__index_subscribers, true));
+			trace(" Subscriptions: " + json_stringify(__Notifire().__subscriptions, true));
+			trace(" Events Index: " + json_stringify(__Notifire().__index_events, true));
+			trace(" Subscribers Index: " + json_stringify(__Notifire().__index_subscribers, true));
 		}
 	
 	}

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"notifire_emit",
   "parent":{
-    "name":"notifire",
-    "path":"folders/Scripts/notifire.yy",
+    "name":"Notifire",
+    "path":"folders/Scripts/Notifire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
