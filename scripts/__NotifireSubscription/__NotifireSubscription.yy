@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__notifire_subscription",
+  "%Name":"__NotifireSubscription",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__notifire_subscription",
+  "name":"__NotifireSubscription",
   "parent":{
     "name":"Notifire",
     "path":"folders/Scripts/Notifire.yy",
